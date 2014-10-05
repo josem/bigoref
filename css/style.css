@@ -10,7 +10,11 @@
   color: #d85030;
 }
 
-.uk-table code {
+.bigoref .uk-table code {
   padding: 4px;
   font-size: 13px;
+}
+
+.bigoref .uk-width-medium-3-4 {
+  padding-left: 18px;
 }
