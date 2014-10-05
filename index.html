@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big O Reference</title>
+    <meta name="description" content="Big O Reference for common algorithms and data structures with comparisons">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/uikit/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit/uikit.almost-flat.min.css" />
+    <link rel="stylesheet" href="css/uikit/addons/uikit.addons.min.css" />
+    <link rel="stylesheet" href="css/uikit/addons/almost-flat.addons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit/uikit.min.js"></script>
+    <script src="js/uikit/addons/sticky.min.js"></script>
+  </head>
+
+  <body>
+    <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+      <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-1-1">
+          <h1 class="uk-heading-large">Big O Reference</h1>
+          <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+        </div>
+      </div>
+
+      <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-4">
+          <div class="uk-panel uk-panel-box" data-uk-sticky="{top:35}">
+            <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
+              <li class="uk-nav-header">Content</li>
+              <li class="uk-active"><a href="#introduction">Introduction</a></li>
+              <li class=""><a href="#sorting">Sorting</a></li>
+              <li class=""><a href="#searching">Searching</a></li>
+              <li class=""><a href="#data-structures">Data Structures</a></li>
+              <li class="uk-nav-divider"></li>
+              <li class=""><a href="#faq"><i class="uk-icon-info-circle uk-margin-small-right"></i>FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="uk-width-medium-3-4">
+          <h2 id="introduction">Introduction</h2>
+          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <hr class="uk-grid-divider">
+
+          <h2 id="sorting">Sorting</h2>
+          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <div class="uk-overflow-container">
+            <table class="uk-table uk-text-nowrap uk-table-striped">
+              <thead>
+                <tr>
+                  <th>Algorithm</th>
+                  <th>Time</th>
+                  <th></th>
+                  <th></th>
+                  <th>Auxiliary Space</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Best</th>
+                  <th>Average</th>
+                  <th>Worst</th>
+                  <th>Worst</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Bubble_sort" target="_blank">Bubble sort</a></td>
+                  <td><code class="bigo-great">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Insertion_sort" target="_blank">Insertion sort</a></td>
+                  <td><code class="bigo-great">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Selection_sort" target="_blank">Select sort</a></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Merge_sort" target="_blank">Mergesort</a></td>
+                  <td><code class="bigo-ok">O(n log(n))</code></td>
+                  <td><code class="bigo-great">O(n log(n))</code></td>
+                  <td><code class="bigo-great">O(n log(n))</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Quicksort" target="_blank">Quicksort</a></td>
+                  <td><code class="bigo-ok">O(n log(n))</code></td>
+                  <td><code class="bigo-great">O(n log(n))</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Heapsort" target="_blank">Heapsort</a></td>
+                  <td><code class="bigo-ok">O(n log(n))</code></td>
+                  <td><code class="bigo-great">O(n log(n))</code></td>
+                  <td><code class="bigo-great">O(n log(n))</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Bucket_sort" target="_blank">Bucket sort</a></td>
+                  <td><code class="bigo-great">O(n+k)</code></td>
+                  <td><code class="bigo-great">O(n+k)</code></td>
+                  <td><code class="bigo-bad">O(n<sup>2</sup>)</code></td>
+                  <td><code class="bigo-ok">O(n+k)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Radix_sort" target="_blank">Radix sort</a></td>
+                  <td><code class="bigo-great">O(nk)</code></td>
+                  <td><code class="bigo-great">O(nk)</code></td>
+                  <td><code class="bigo-great">O(nk)</code></td>
+                  <td><code class="bigo-ok">O(n+k)</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <hr class="uk-grid-divider">
+
+          <h2 id="searching">Searching</h2>
+
+          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <div class="uk-overflow-container">
+            <table class="uk-table uk-text-nowrap uk-table-striped">
+              <thead>
+                <tr>
+                  <th>Algorithm</th>
+                  <th>Data Structure</th>
+                  <th>Time</th>
+                  <th></th>
+                  <th>Space</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th>Average</th>
+                  <th>Worst</th>
+                  <th>Worst</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Depth-first_search" target="_blank">Depth First Search (DFS)</a></td>
+                  <td>Graph of |V| vertices and |E| edges</td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(|E| + |V|)</code></td>
+                  <td><code class="bigo-great">O(|V|)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Breadth-first_search" target="_blank">Breadth First Search (BFS)</a></td>
+                  <td>Graph of |V| vertices and |E| edges</td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(|E| + |V|)</code></td>
+                  <td><code class="bigo-great">O(|V|)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank">Binary Search</a></td>
+                  <td>Sorted array of n elements</td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Brute-force_search" target="_blank">Linear (Brute force)</a></td>
+                  <td>Array of n elements</td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Shortest path by Dijkstra,<br> Min-heap as priority queue</a></td>
+                  <td>Graph of |V| vertices and |E| edges</td>
+                  <td><code class="bigo-ok">O((|V|+|E|) log|V|)</code></td>
+                  <td><code class="bigo-ok">O((|V|+|E|) log|V|)</code></td>
+                  <td><code class="bigo-ok">O(|V|)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Shortest path by Dijkstra,<br> unsorted array as priority queue</a></td>
+                  <td>Graph of |V| vertices and |E| edges</td>
+                  <td><code class="bigo-ok">O(|V|<sup>2</sup>)</code></td>
+                  <td><code class="bigo-ok">O(|V|<sup>2</sup>)</code></td>
+                  <td><code class="bigo-ok">O(|V|)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm" target="_blank">Shortest path by Bellman-Ford</a></td>
+                  <td>Graph of |V| vertices and |E| edges</td>
+                  <td><code class="bigo-ok">O(|V||E|)</code></td>
+                  <td><code class="bigo-ok">O(|V||E|)</code></td>
+                  <td><code class="bigo-ok">O(|V|)</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 id="data-structures">Data Structures</h2>
+
+          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <div class="uk-overflow-container">
+            <table class="uk-table uk-text-nowrap uk-table-striped ">
+              <thead>
+                <tr>
+                  <th>Data Structure</th>
+                  <th>Time</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Average</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th>Worst</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Indexing</th>
+                  <th>Search</th>
+                  <th>Insertion</th>
+                  <th>Deletion</th>
+                  <th>Indexing</th>
+                  <th>Search</th>
+                  <th>Insertion</th>
+                  <th>Deletion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Array_data_structure" target="_blank">Basic Array</a></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-ok">-</code></td>
+                </tr>                
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Dynamic_array" target="_blank">Dynamic Array</a></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists" target="_blank">Single-Linked List</a></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Doubly_linked_list" target="_blank">Double-Linked List</a></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Skip_list" target="_blank">Skip List*</a></td>
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Hash_table" target="_blank">Hash Table</a></td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+                  <td><code class="bigo-great">O(1)</code></td>
+
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Binary_search_tree" target="_blank">Binary Search Tree</a></td>
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Cartesian_tree" target="_blank">Cartresian Tree</a></td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                  <td><code class="bigo-bad">O(n)</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/B_tree" target="_blank">B-Tree</a></td>
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Red-black_tree" target="_blank">Red-Black Tree</a></td>
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                </tr>
+                <tr>
+                  <td><a href="https://en.wikipedia.org/wiki/Splay_tree" target="_blank">Splay Tree</a></td>
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+
+                  <td><code class="bigo-ok">-</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/AVL_tree" target="_blank">AVL Tree</a></td>
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  
+                  <td><code class="bigo-ok">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                  <td><code class="bigo-great">O(log(n))</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <hr class="uk-grid-divider">
+
+          <p><span class="uk-badge">NOTE</span> Lorem ipsum <a href="#">dolor sit amet</a>, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
+
