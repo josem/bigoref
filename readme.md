@@ -23,7 +23,9 @@ git clone git@github.com:josem/bigoref.git
 ```
 
 ## Credits
-The main motivation and inspiration to create this project is [ericdrowell](https://github.com/ericdrowell) and this is just an attempt to keep his project alive.
+The main motivation and inspiration to create this project is [ericdrowell](https://github.com/ericdrowell) and all the contributors of the original project.
+
+This is just an attempt to keep the project alive and hopefully improve it.
 
 I have used:
 * [jQuery](http://jquery.com/)
