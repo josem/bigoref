@@ -31,6 +31,10 @@
   margin-bottom: 10px;
 }
 
+.uk-panel-box.uk-active {
+  width: 224px;
+}
+
 @media print {
   .uk-width-medium-1-4, #fork-me-github, .no-print, .uk-grid-divider {
     display: none;
