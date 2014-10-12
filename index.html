@@ -17,15 +17,35 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/uikit/uikit.min.js"></script>
     <script src="js/uikit/addons/sticky.min.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
 
   <body class="bigoref">
-    <a href="https://github.com/josem/bigoref"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=341363219358346&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
       <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-1-1">
+        <div class="uk-width-9-10">
           <h1 class="uk-heading-large">Big O Reference</h1>
-          <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+          <p class="uk-text-large">Big O Reference of common algorithms and data structures</p>
+        </div>
+        <div class="uk-width-1-10 no-print">
+          <!-- Twitter -->
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bigoref.com" data-via="josemdev">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+          <!-- Facebook -->
+          <div class="fb-like" data-href="http://bigoref.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+
+          <!-- Google Plus -->
+          <div class="g-plus" data-action="share" data-annotation="none" data-href="http://bigoref.com"></div>
         </div>
       </div>
 
@@ -35,27 +55,24 @@
             <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true}">
               <li class="uk-active"><a href="#introduction">Introduction</a></li>
               <li class="uk-nav-header">Algorithms</li>
-
               <li class=""><a href="#sorting">Sorting</a></li>
               <li class=""><a href="#searching">Searching</a></li>
               <li class="uk-nav-header">Data Structures</li>
               <li class=""><a href="#data-structures">Common Data Structures</a></li>
               <li class=""><a href="#heaps">Heaps</a></li>
               <li class=""><a href="#graphs">Graphs</a></li>
-              <li class="uk-nav-divider"></li>
-              <li class=""><a href="#faq"><i class="uk-icon-info-circle uk-margin-small-right"></i>FAQ</a></li>
             </ul>
           </div>
         </div>
         
         <div class="uk-width-medium-3-4">
-          <h2 id="introduction">Introduction</h2>
-          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <h2 id="introduction" class="no-print">Introduction</h2>
+          <p class="no-print">This site summarizes the complexities in terms of space and time (Big O) of the most important algorithms and operations in common data structures. It is <a href="http://github.com/josem/bigoref">100% open-source</a>, with no ads and has a friendly <a href="javascript:if(window.print)window.print()">printable version</a>. If you have any comment please create an issue on Github. To know more about the project and see the credits take a look at <a href="http://github.com/josem/bigoref">the readme file</a>.</p>
 
           <hr class="uk-grid-divider">
 
           <h2 id="sorting">Sorting</h2>
-          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <p class="no-print">Very important and useful type of algorithms for many common problems nowadays, Finder, iTunes, Excel and many more programs use some kind of sorting algorithm.</p>
 
           <div class="uk-overflow-container">
             <table class="uk-table uk-text-nowrap uk-table-striped">
@@ -137,11 +154,11 @@
           </div>
 
 
-          <hr class="uk-grid-divider">
+          <hr class="uk-grid-divider"><div class="page-break"></div>
 
-          <h2 id="searching">Searching</h2>
+          <h2 style="page-break-before: always;" id="searching">Searching</h2>
 
-          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <p class="no-print">Searching efficiently is crucial for many operations in different parts of the software we use on a daily basis.</p>
 
           <div class="uk-overflow-container">
             <table class="uk-table uk-text-nowrap uk-table-striped">
@@ -215,9 +232,11 @@
             </table>
           </div>
 
-          <h2 id="data-structures">Common Data Structures</h2>
+          <hr class="uk-grid-divider"><div class="page-break"></div>
 
-          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <h2 style="page-break-before: always;" id="data-structures">Common Data Structures</h2>
+
+          <p class="no-print">Data structures are the key in some of the most used algorithms and a good data structure is sometimes the way to achieve a very efficient and elegant solution.</p>
 
           <div class="uk-overflow-container">
             <table class="uk-table uk-text-nowrap uk-table-striped ">
@@ -401,11 +420,11 @@
             </table>
           </div>
 
-          <hr class="uk-grid-divider">
+          <p><span class="uk-badge">Note</span> * All have space complexity of O(n) except for Skip that has O(n log(n))</p>
 
-          <h2 id="heaps">Heaps</h2>
+          <hr class="uk-grid-divider"><div class="page-break"></div>
 
-          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <h2 style="page-break-before: always;" id="heaps">Heaps</h2>
 
           <div class="uk-overflow-container">
             <table class="uk-table uk-text-nowrap uk-table-striped ">
@@ -486,12 +505,15 @@
             </table>
           </div>
 
-          <hr class="uk-grid-divider">
+          <p><span class="uk-badge">Note</span> * Amortized time</p>
 
 
-          <h2 id="graphs">Graphs</h2>
+          <hr class="uk-grid-divider"><div class="page-break"></div>
 
-          <p>Lorem ipsum dolor sit amet, <code>consectetuer adipiscing</code> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+          <h2 style="page-break-before: always;" id="graphs">Graphs</h2>
+
+          <p>Graphs have applications </p>
 
           <div class="uk-overflow-container">
             <table class="uk-table uk-text-nowrap uk-table-striped ">
@@ -546,15 +568,10 @@
               </tbody>
             </table>
           </div>
-
-          <hr class="uk-grid-divider">
-
-          <p><span class="uk-badge">NOTE</span> Lorem ipsum <a href="#">dolor sit amet</a>, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
         </div>
-
-
       </div>
     </div>
+    <a href="https://github.com/josem/bigoref" id="fork-me-github"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
   </body>
 </html>
 

@@ -1405,19 +1405,7 @@ iframe {
 ul.uk-nav-sub {
   padding: 5px 0 5px 15px;
 }
-/* Modifier: `uk-nav-parent-icon`
- ========================================================================== */
-.uk-nav-parent-icon > .uk-parent > a:after {
-  content: "\f104";
-  width: 20px;
-  margin-right: -10px;
-  float: right;
-  font-family: FontAwesome;
-  text-align: center;
-}
-.uk-nav-parent-icon > .uk-parent.uk-open > a:after {
-  content: "\f107";
-}
+
 /* Modifier `uk-nav-side`
  ========================================================================== */
 /*
@@ -1769,18 +1757,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   outline: none;
 }
-/*
- * 1. Center icon vertically
- */
-.uk-navbar-toggle:after {
-  content: "\f0c9";
-  font-family: FontAwesome;
-  /* 1 */
-  vertical-align: middle;
-}
-.uk-navbar-toggle-alt:after {
-  content: "\f002";
-}
+
 /* Sub-object: `uk-navbar-center`
  ========================================================================== */
 /*
@@ -2139,13 +2116,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   margin-left: 0;
   margin-right: 0;
 }
-/*
- * Icon
- */
-.uk-tab-responsive > a:before {
-  content: "\f0c9\00a0";
-  font-family: FontAwesome;
-}
+
 /* Modifier: 'tab-center'
  ========================================================================== */
 .uk-tab-center {
@@ -3190,35 +3161,7 @@ select.uk-form-width-mini {
   /* 2 */
   position: relative;
 }
-/* ========================================================================
-   Component: Icon
- ========================================================================== */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../../fonts/fontawesome-webfont.eot");
-  src: url("../../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff") format("woff"), url("../../fonts/fontawesome-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/*
- * 1. Allow margin
- * 2. Prevent inherit font style
- * 4. Correct line-height
- * 5. Better font rendering
- */
-[class*='uk-icon-'] {
-  font-family: FontAwesome;
-  /* 1 */
-  display: inline-block;
-  /* 2 */
-  font-weight: normal;
-  font-style: normal;
-  /* 4 */
-  line-height: 1;
-  /* 5 */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 /* Size modifiers
  ========================================================================== */
 .uk-icon-small:before {
@@ -4829,12 +4772,7 @@ select.uk-form-width-mini {
   vertical-align: middle;
   opacity: 0.3;
 }
-/* Icon */
-.uk-close:after {
-  display: block;
-  content: "\f00d";
-  font-family: FontAwesome;
-}
+
 /*
  * Hover
  * 1. Apply hover style also to focus state
@@ -5117,24 +5055,6 @@ a.uk-thumbnail:focus {
 .uk-overlay-toggle:hover .uk-overlay-area,
 .uk-overlay-toggle.uk-hover .uk-overlay-area {
   opacity: 1;
-}
-/*
- * Icon
- */
-.uk-overlay-area:empty:before {
-  content: "\f002";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  margin-top: -25px;
-  margin-left: -25px;
-  font-size: 50px;
-  line-height: 1;
-  font-family: FontAwesome;
-  text-align: center;
-  color: #ffffff;
 }
 /* Sub-object `uk-overlay-area-content`
  ========================================================================== */
@@ -6946,14 +6866,8 @@ a.uk-thumbnail:focus {
  ========================================================================== */
 @media print {
   * {
-    background: transparent !important;
-    color: black !important;
     box-shadow: none !important;
     text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
   }
   pre,
   blockquote {

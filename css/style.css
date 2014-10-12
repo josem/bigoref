@@ -18,3 +18,34 @@
 .bigoref .uk-width-medium-3-4 {
   padding-left: 18px;
 }
+
+.page-break { display: none; }
+
+@media print {
+  .uk-width-medium-1-4, #fork-me-github, .no-print, .uk-grid-divider {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000 !important;
+  }
+
+  .uk-width-medium-3-4 {
+    width: 100%;
+  }
+
+  div, h2 { 
+    float: none !important;
+  }
+
+  h2 {
+    padding-top: 20px;
+  }
+
+  .page-break { 
+    page-break-inside: avoid; 
+    page-break-after: always;
+  }
+}
+
