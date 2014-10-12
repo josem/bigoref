@@ -19,7 +19,17 @@
   padding-left: 18px;
 }
 
-.page-break { display: none; }
+.page-break { 
+  display: none;
+}
+
+.twitter-share-button {
+  margin-bottom: 5px;
+}
+
+.fb-like {
+  margin-bottom: 10px;
+}
 
 @media print {
   .uk-width-medium-1-4, #fork-me-github, .no-print, .uk-grid-divider {
