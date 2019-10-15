@@ -1,1 +1,2 @@
-# DEPRECATED NOW, USE https://github.com/ericdrowell/BigOCheatSheet
+# DEPRECATED NOW
+Use https://github.com/ericdrowell/BigOCheatSheet
